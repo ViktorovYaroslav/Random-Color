@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*--------------------------------------------------------------*/
+.body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.container > *:not(:last-child){
+   margin-bottom: 15px;
+}
+.container > p{
+   text-align: center;
+   font-size: 36px;
+   text-transform: uppercase;
+   font-family: 'Century Gothic';
+   background: #fff;
+   padding: 5px 20px;
+   border-radius: 5px;
+}
+.container > button{
+   border-radius: 50%;
+   width: 70px;
+   height: 70px;
+   border: 0;
+   background: #3a3a3a;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   transition: .2s all ease-in-out;
+}
+.container > button:active{
+   transform: scale(.9);
+}
+.fa-sync-alt{
+   text-align: center;
+   color: #fff;
+   font-size: 40px;
+   transition: .2s all ease-in-out;
+
+}
+.container > button:hover > .fa-sync-alt{
+   transform: rotate(360deg);
+}
